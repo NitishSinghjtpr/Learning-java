@@ -10,6 +10,7 @@ public class guessNumber {
         do{
             System.out.println("Enter Guess nNumber!");
             userGuess=sc.nextInt();
+            sc.close();
             if (systemGuess==userGuess) {
                 System.out.println("correct guess");
                 break;
@@ -22,5 +23,6 @@ public class guessNumber {
                 System.out.println("correct");
             }
         }while(true);
+        
     }
 }
